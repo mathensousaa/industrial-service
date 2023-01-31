@@ -1,7 +1,7 @@
 function Home( ) {
     return (
         <div>
-            <h1>Nova Home</h1>
+            <h1>Industrial Service</h1>
         </div>
     )
 }
