@@ -12,7 +12,6 @@ import { Footer } from '../components/Footer/Footer';
 import { Form } from '../components/Form/Form'; 
 import { Button } from '../components/Button/Button';
 
-
 function Home( ) {
     return (
         <body>
