@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/mathensousaa/industrial-service#readme",
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "next": "^13.1.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1"
   }
 }
