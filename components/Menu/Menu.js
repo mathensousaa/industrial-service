@@ -6,22 +6,22 @@ export function Menu (props) {
         <nav className={styles.menu}>
             <ul>
                 <li>
-                    <Link href="#partners">Parceiros</Link>
+                    <Link href="/">Parceiros</Link>
                 </li>
                 <li>
-                    <Link href="#company">A empresa</Link>
+                    <Link href="/">A empresa</Link>
                 </li>
                 <li>
-                    <Link href="#services">Serviços</Link>
+                    <Link href="/">Serviços</Link>
                 </li>
                 <li>
-                    <Link href="#projects">Projetos</Link>
+                    <Link href="/">Projetos</Link>
                 </li>
                 <li>
-                    <Link href="#contact">Contato</Link>
+                    <Link href="/">Contato</Link>
                     </li>
                 <li>
-                    <Link href="#informations">Informações</Link>
+                    <Link href="/">Informações</Link>
                 </li>
             </ul>
         </nav>
