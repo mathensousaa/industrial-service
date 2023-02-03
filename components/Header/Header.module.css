@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    height: 64px;
+    margin: 0 275px;
+}
+
+.header img {
+    height: 3rem;
+}
