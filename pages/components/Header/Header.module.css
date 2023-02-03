@@ -8,5 +8,6 @@
 }
 
 .header img {
-    height: 3rem;
+    width: auto;
+    height: auto;
 }
