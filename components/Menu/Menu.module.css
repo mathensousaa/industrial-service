@@ -1,0 +1,18 @@
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.menu a{
+    color: var(--grey-700);
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: var(--grey900);
+    transition: 0.25s;
+}
