@@ -1,7 +1,7 @@
 import styles from './Menu.module.css'
 import Link from 'next/link';
 
-export function Menu (props) {
+export function Menu () {
     return (
         <nav className={styles.menu}>
             <ul>
