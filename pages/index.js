@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import { useState } from 'react';
-import { Header } from './components/Header/Header';
-import { Hero } from './components/Hero/Hero';
-import { Button } from './components/Button/Button';
-import { Partners } from './components/Parceiros/Partners';
-import { App } from './_app.js';
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
+import Button from './components/Button/Button';
+import Partners from './components/Parceiros/Partners';
+import App from './_app.js';
 import Image from 'next/image';
 
 
