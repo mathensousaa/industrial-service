@@ -1,4 +1,4 @@
-.btn {
+.btnHeader {
     background-color: var(--red-700);
     color: #fff;
     border: none;
@@ -7,11 +7,22 @@
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    border: 2px solid var(--white);
 }
 
-.btn:hover {
+.btnHeader:hover {
     background-color: var(--white);
     border: 2px solid var(--red-700);
     color: var(--red-700);
     transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 991.98px) {
+    .btnHeader {
+        position: absolute;
+        top: 320px;
+        left: 0;
+        margin-top: 32px;
+        width: 100%;
+    }
 }

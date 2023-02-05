@@ -1,5 +1,6 @@
 import styles from './Menu.module.css'
 import Link from 'next/link';
+import Button from '../Button/Button';
 
 export default function Menu () {
     return (
@@ -22,6 +23,9 @@ export default function Menu () {
                     </li>
                 <li>
                     <Link href="#informations">Informações</Link>
+                </li>
+                <li>
+                    
                 </li>
             </ul>
         </nav>

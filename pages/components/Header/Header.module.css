@@ -1,13 +1,35 @@
 .header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--white);
     height: 64px;
-    margin: 0 275px;
+    margin: 0 32px;
 }
 
 .header img {
     width: auto;
     height: auto;
+}
+
+.header .menuToggler {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+
+    .header .menuToggler {
+        display: flex;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .menuToggler .menuTogglerIcon {
+        color: var(--red-700);
+        position: relative;
+        transition: all .45s ease-in-out;
+    }
 }
