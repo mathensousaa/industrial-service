@@ -7,9 +7,6 @@ export default function Menu () {
         <nav className={styles.menu}>
             <ul>
                 <li>
-                    <Link href="#partners">Empresas</Link>
-                </li>
-                <li>
                     <Link href="#company">A empresa</Link>
                 </li>
                 <li>
