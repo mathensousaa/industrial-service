@@ -4,6 +4,7 @@ import Logo from '../../../public/industrialservice-logo.svg';
 import Image from 'next/image';
 import { FiMenu } from 'react-icons/fi';
 import Button from '../Button/Button';
+import Link from 'next/link';
 
 export default function Header() {
   return (
@@ -11,7 +12,9 @@ export default function Header() {
       <a href="#">
         <Image src={Logo} alt="Logo Industrial Service" />
       </a>
-      <Menu />
+      <nav>
+        <Menu />
+      </nav>
       <Button content="Entre em contato" />
       <div 
         className={styles.menuToggler} 
