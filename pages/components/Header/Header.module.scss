@@ -1,0 +1,159 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    height: 64px;
+    margin: 0 32px;
+}
+
+.header img {
+    width: auto;
+    height: auto;
+}
+
+.menu {
+    visibility: hidden;
+}
+
+.menu.active {
+    visibility: visible;
+}
+
+@media (max-width: 991.98px) {
+
+    .menuToggler {
+        display: block;
+        width: 24px;
+        height: 15px;
+        cursor: pointer;
+        align-items: center;
+        z-index: 100;
+    
+        .line1,
+        .line2,
+        .line3 {
+            width: 100%;
+            height: 3px;
+            background-color: var(--red-700);
+            border-radius: 200px;
+            transition: background-color .2s ease-in-out;
+        }
+    
+        .line1 {
+            animation: animateLine1Rev .7s ease-in-out;
+        }
+    
+        .line2 {
+            margin: 4px 0;
+            animation: animateLine2Rev .7s ease-in-out;
+        }
+    
+        .line3 {
+            animation: animateLine3Rev .7s ease-in-out;
+        }
+    
+        &:hover {
+            .line1,
+            .line2,
+            .line3 {
+                background-color: var(--red-700);
+            }
+        }
+    
+        &.active {
+            .line1,
+            .line2,
+            .line3 {
+                background-color: var(--red-700);
+            }
+        }
+    
+        .line1 {
+            animation: animateLine1 .7s cubic-bezier(0.30,1,0.70,1) forwards;
+        }
+        .line2 {
+            animation: animateLine2 .7s cubic-bezier(0.30,1,0.70,1) forwards;
+        }
+        .line3 {
+            animation: animateLine3 .7s cubic-bezier(0.30,1,0.70,1) forwards;
+        }
+        
+        .noAnimation {
+            -webkit-animation: nome !important;
+            animation: none !important;
+        }
+    }
+    
+    @keyframes animateLine1 {
+        0% {
+            transform: rotate(0);
+        }
+        50% {
+            transform: translateY(7px) rotate(0);
+        }
+        100% {
+            transform: translateY(7px) rotate(45deg);
+        }
+    }
+    
+    @keyframes animateLine2 {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(0);
+            opacity: 0;
+        }
+    }
+    
+    @keyframes animateLine3 {
+        0% {
+            transform: rotate(0);
+        }
+        50% {
+            transform: translateY(-7px) rotate(0);
+        }
+        100% {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+    }
+    
+    @keyframes animateLine1-rev {
+        0% {
+            transform: translateY(7px) rotate(45deg);
+        }
+        50% {
+            transform: translateY(7px) rotate(0);
+        }
+        100% {
+            transform: rotate(0);
+        }
+        
+    }
+    
+    @keyframes animateLine2-rev {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes animateLine3-rev {
+        0% {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+        50% {
+            transform: translateY(-7px) rotate(0);
+        }
+        100% {
+            transform: rotate(0);
+        }
+        
+    }
+}

@@ -1,25 +1,38 @@
-import styles from './Header.module.css';
+import styles from './Header.module.scss';
 import Menu from '../Menu/Menu';
 import Logo from '../../../public/industrialservice-logo.svg';
 import Image from 'next/image';
-import { FiMenu } from 'react-icons/fi';
 import Button from '../Button/Button';
-import Link from 'next/link';
+import React from 'react';
 
-export default function Header() {
+export default function Header() { 
+
+  const [active, setActive] = React.useState(false);
+
+  const handleClick = () => {
+    setActive(!active);
+  };
+
   return (
     <header className={styles.header}>
       <a href="#">
         <Image src={Logo} alt="Logo Industrial Service" />
       </a>
       <nav>
-        <Menu />
+        {active && (
+          <Menu className={styles.menu}/>
+        )}
       </nav>
-      <Button content="Entre em contato" />
+      {active && (
+        <Button className={styles.menu} content="Entre em contato" />
+      )}
       <div 
-        className={styles.menuToggler} 
+        className={`${styles.menuToggler} ${active ? styles.active : ''}`}
+        onClick={handleClick}
         size={20}>
-          <FiMenu size={28} className={styles.menuTogglerIcon}/>
+            <div className={`${styles.line1} ${active ? '' : styles.noAnimation}`}></div>
+            <div className={`${styles.line2} ${active ? '' : styles.noAnimation}`}></div>
+            <div className={`${styles.line3} ${active ? '' : styles.noAnimation}`}></div>	
       </div>
     </header>
   )
