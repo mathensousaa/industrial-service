@@ -18,9 +18,11 @@ export default function Header() {
       <a href="#">
         <Image src={Logo} alt="Logo Industrial Service" />
       </a>
-      <nav className={`${styles.menu} ${active ? styles.active : ""}`}>
-        <Menu />
-      </nav>
+      {active && (
+        <nav>
+          <Menu />
+        </nav>
+      )}
       {active && (
         <Button className={styles.menu} content="Entre em contato" />
       )}
