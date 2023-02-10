@@ -1,13 +1,46 @@
 .hero {
     /*background-image: linear-gradient(rgba(0, 0, 0, 0.8), (rgba(0, 0, 0, 0.8))), url(../../../public/heroBackground.jpg);*/
-    background-color: rgba(0, 0, 0, 0.8);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../../public/heroBackground.jpg);
     width: 100vw;
     height: 100vh;
-    padding: 0 275px;
-    display: block;
+    padding: 0 20%;
+    display: flex;
+    align-items: center;
     color: var(--white);
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero h3 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .hero strong {
     color: var(--red-700)
+}
+
+.hero .wrapper {
+    width: 670px;
+}
+
+@media (max-width: 991.98px) {
+    .hero {
+        padding: 0 2rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    .hero h3 {
+        font-size: 1rem;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
 }
