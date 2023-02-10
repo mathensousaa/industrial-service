@@ -8,6 +8,7 @@
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     border: 2px solid var(--white);
+    z-index: 101;
 }
 
 .btnHeader:hover {
