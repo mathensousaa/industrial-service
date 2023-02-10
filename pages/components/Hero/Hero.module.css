@@ -1,0 +1,13 @@
+.hero {
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.8), (rgba(0, 0, 0, 0.8))), url(../../../public/heroBackground.jpg);*/
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    padding: 0 275px;
+    display: block;
+    color: var(--white);
+}
+
+.hero strong {
+    color: var(--red-700)
+}
