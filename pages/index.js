@@ -29,6 +29,7 @@ function Home( ) {
             </Head>
 
             <Header/>
+            <Hero />
         </>
     )
 }
