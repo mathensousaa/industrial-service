@@ -12,14 +12,6 @@
     height: auto;
 }
 
-.menu {
-    visibility: hidden;
-}
-
-.menu.active {
-    visibility: visible;
-}
-
 @media (max-width: 991.98px) {
 
     .menuToggler {
