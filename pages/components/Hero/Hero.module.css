@@ -1,5 +1,4 @@
 .hero {
-    /*background-image: linear-gradient(rgba(0, 0, 0, 0.8), (rgba(0, 0, 0, 0.8))), url(../../../public/heroBackground.jpg);*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../../public/heroBackground.jpg);
     width: 100vw;
     height: 100vh;
@@ -9,21 +8,68 @@
     color: var(--white);
 }
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: var(--fs-xl);
+    font-weight: 400;
+    margin-bottom: 2rem;
 }
 
 .hero h3 {
-    font-size: 1.5rem;
+    font-size: var(--fs-600);
+    font-weight: 400;
     margin-bottom: 3rem;
 }
 
 .hero strong {
+    font-weight: 700;
     color: var(--red-700)
 }
 
-.hero .wrapper {
-    width: 670px;
+.textWrapper{
+    box-sizing: content-box;
+    display: flex;
+    height: 40px;
+}
+
+.rotatingText {
+    overflow: hidden;
+}
+
+.hero .rotatingText span{
+    display: block;
+    text-align: left;
+    padding-left: 0.5rem;
+    color: var(--red-700);
+    font-size: var(--fs-600);
+    font-weight: 700;
+    height: 100%;
+    animation: spinWords 10s infinite;
+}
+
+@keyframes spinWords {
+    10% {
+        transform: translateY(-106%);
+    }
+    25% {
+        transform: translateY(-100%);
+    }
+    35% {
+        transform: translateY(-206%);
+    }
+    50% {
+        transform: translateY(-200%);
+    }
+    60% {
+        transform: translateY(-306%);
+    }
+    75% {
+        transform: translateY(-300%);
+    }
+    85% {
+        transform: translateY(-406%);
+    }
+    100% {
+        transform: translateY(-400%);
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -33,14 +79,34 @@
         justify-content: center;
     }
 
-    .hero h1 {
-        font-size: 1.5rem;
-    }
-    .hero h3 {
-        font-size: 1rem;
+    .hero .rotatingText span{
+        font-size: var(--fs-500);
     }
 
-    .wrapper {
+    .hero h1 {
+        font-size: var(--fs-l);
+    }
+    .hero h3 {
+        font-size: var(--fs-400);
+    }
+
+    .hero .wrapper .textWrapper {
         width: 100%;
+        justify-content: center;
+        display: block;
+    }
+
+    .hero .wrapper .textWrapper .rotatingText {
+        height: 40px;
+    }
+
+    .textWrapper h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .textWrapper .rotatingText span{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
     }
 }

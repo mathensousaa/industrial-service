@@ -5,8 +5,22 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.wrapper}>
-        <h1>Transformando <strong>segurança</strong> em <strong>produtividade</strong>: a solução da Industrial Service.</h1>
-        <h3><strong>Manutenção predial</strong>: tudo isso na Industrial Service.</h3>
+        <h1>
+          Transformando <strong>segurança</strong> em <strong>produtividade</strong>
+          <br></br>
+          a solução da Industrial Service.
+        </h1>
+        <div className={styles.textWrapper}>
+          <h3> aqui você encontra</h3>
+          <div className={styles.rotatingText}>
+            <span>Manutenção predial</span>
+            <span>Manutenção industrial</span>
+            <span>Acesso por cordas</span>
+            <span>Treinamentos</span>
+            <span>Manutenção predial</span>
+          </div>
+          
+        </div>
       </div>
     </section>
   )
