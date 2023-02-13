@@ -1,7 +1,11 @@
-export default function Social() {
+import styles from './Social.module.css'
+
+export default function Social(props) {
     return (
-        <section>
-            <h1>Redes Sociais</h1>
-        </section>
+        <div className={styles.iconWrapper}>
+            <a href="https://www.instagram.com/industrialservicebr" target="_blank" rel="noreferrer">
+                L
+            </a>
+        </div>
     )
 }

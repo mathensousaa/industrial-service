@@ -1,5 +1,8 @@
 import styles from './Hero.module.css'
 import Button from '../Button/Button'
+import Social from '../Social/Social'
+import { FaLinkedinIn } from "react-icons/fa";
+
 
 export default function Hero() {
   return (
@@ -17,6 +20,11 @@ export default function Hero() {
             <span>Treinamentos</span>
             <span>Manutenção predial</span>
           </div>
+        </div>
+        <div className={styles.socialWrapper}>
+          <Social/>
+          <Social/>
+          <Social/>
         </div>
       </div>
     </section>
