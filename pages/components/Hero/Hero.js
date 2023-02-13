@@ -19,8 +19,8 @@ export default function Hero() {
             <span>Treinamentos</span>
             <span>Manutenção predial</span>
           </div>
-          
         </div>
+        <Button />
       </div>
     </section>
   )
