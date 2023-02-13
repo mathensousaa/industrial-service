@@ -18,14 +18,12 @@ export default function Header() {
       <a href="#">
         <Image src={Logo} alt="Logo Industrial Service" />
       </a>
-      {active && (
-        <nav>
+        <nav className={`${active ? styles.active : styles.noDisplay}`}>
           <Menu />
         </nav>
-      )}
-      {active && (
-        <Button className={styles.menu} content="Entre em contato" />
-      )}
+      <div className={`${active ? styles.active : styles.noDisplay}`}>
+        <Button className={styles.menu} content="Entrar em contato" />
+      </div>
       <div 
         className={styles.menuToggler}
         onClick={() => setActive(!active)}
