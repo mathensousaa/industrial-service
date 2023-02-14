@@ -26,12 +26,12 @@ function Home( ) {
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-                <script src="https://kit.fontawesome.com/e6204ec45c.js" crossorigin="anonymous"></script>
                 
             </Head>
 
             <Header/>
             <Hero />
+            <i class="fa-solid fa-user"></i>
         </>
     )
 }
