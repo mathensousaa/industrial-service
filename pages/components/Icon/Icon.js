@@ -1,5 +1,5 @@
 import styles from './Icon.module.css';
-import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Icon(props) {
 
@@ -7,13 +7,7 @@ export default function Icon(props) {
         
 
         <a className={styles.iconWrapper} href={props.link} style={{width: props.size, height: props.size}} target="_blank" rel="noreferrer">
-            <i class="fa-solid fa-user"></i>
-            <Image 
-                src={props.src}
-                alt={props.alt}
-                width={props.width}
-                height={props.height}
-            />
+            <FontAwesomeIcon icon={props.icon} width={props.size} size={props.iconSize} color={props.iconColor}/>
         </a>
     )
 }
