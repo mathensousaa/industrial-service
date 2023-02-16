@@ -1,7 +1,4 @@
 .iconWrapper {
-    width: 50px;
-    height: 50px;
-    background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,15 +6,6 @@
     margin-right: 1rem;
 }
 
-.iconWrapper a {
-    color: var(--red-700);
-}
-
 .iconWrapper:hover {
-    background-color: var(--red-700);
     transition: 0.5s;
-}
-
-.iconWrapper:hover a {
-    color: var(--white);
 }
