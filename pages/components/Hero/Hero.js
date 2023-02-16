@@ -24,24 +24,36 @@ export default function Hero() {
         <div className={styles.socialWrapper}>
           <Icon
             size="62px"
+            bgColor="var(--white)"
             link="https://www.linkedin.com/company/industrial-service-br/"
             icon={faLinkedinIn}
             iconSize="lg"
             iconColor="var(--red-700)"
+
+            hoverBgColor="var(--red-700)"
+            hoverIconColor="var(--white)"
           />
           <Icon
             size="62px"
+            bgColor="var(--white)"
             link="https://www.instagram.com/industrialservicebr/"
             icon={faInstagram}
             iconSize="lg"
             iconColor="var(--red-700)"
+
+            hoverBgColor="var(--red-700)"
+            hoverIconColor="var(--white)"
           />
           <Icon 
             size="62px"
+            bgColor="var(--white)"
             link="https://wa.me/5562982880057"
             icon={faWhatsapp}
             iconSize="lg"
             iconColor="var(--red-700)"
+
+            hoverBgColor="var(--red-700)"
+            hoverIconColor="var(--white)"
           />
         </div>
       </div>

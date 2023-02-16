@@ -22,7 +22,20 @@ export default function Header() {
           <Menu />
         </nav>
       <div className={`${active ? styles.active : styles.noDisplay}`}>
-        <Button className={styles.menu} content="Entrar em contato" />
+        <Button 
+          className={styles.menu}
+          content="Entrar em contato"
+          bgColor="var(--red-700)"
+          color="var(--white)"
+          border="2px solid var(--white)"
+          borderRadius="10px"
+          padding="0.75rem 2.625rem"
+          fontWeight="700"
+
+          hoverBgColor="var(--white)"
+          hoverBorder="2px solid var(--red-700)"
+          hoverColor="var(--red-700)"
+        />
       </div>
       <div 
         className={styles.menuToggler}
