@@ -18,12 +18,11 @@ export default function Header() {
       <a href="#">
         <Image src={Logo} alt="Logo Industrial Service" />
       </a>
-        <nav className={`${active ? styles.active : styles.noDisplay}`}>
-          <Menu />
+        <nav className={`${styles.menuToggled} ${active ? styles.active : styles.noDisplay}`}>
+          <Menu/>
         </nav>
-      <div className={`${active ? styles.active : styles.noDisplay}`}>
-        <Button 
-          className={styles.menu}
+      <div className={`${styles.btnToggled} ${active ? styles.active : styles.noDisplay}`}>
+        <Button
           content="Entrar em contato"
           bgColor="var(--red-700)"
           color="var(--white)"
@@ -33,8 +32,8 @@ export default function Header() {
           fontWeight="700"
 
           hoverBgColor="var(--white)"
-          hoverBorder="2px solid var(--red-700)"
-          hoverColor="var(--red-700)"
+          hoverBorder="2px solid var(--red-400)"
+          hoverColor="var(--red-400)"
         />
       </div>
       <div 
