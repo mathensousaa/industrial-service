@@ -28,7 +28,7 @@ export default function Button(props) {
 
   return (
     <button type="button" className={styles.btn} style={buttonStyles} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      { props.content }
+      <span>{props.content}</span>
     </button>
   );
 };

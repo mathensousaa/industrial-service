@@ -35,24 +35,3 @@
     transform: scaleX(1.1);
     background-color: var(--grey-900);
 }
-
-@media (max-width: 991.98px) {
-    .menu {
-        position: absolute;
-        top: 64px;
-        left: 0px ;
-        width: 100%;
-        height: calc(100vh - 64px);
-        display: flex;
-        flex-direction: column;
-        background-color: var(--grey-50);
-        padding: 16px;
-    }
-
-    .menu li {
-        height: 40px;
-        display: flex;
-        align-items: center;
-        margin: 0;
-    }
-}

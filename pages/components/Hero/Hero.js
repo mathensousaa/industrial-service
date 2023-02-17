@@ -1,8 +1,10 @@
 import styles from './Hero.module.css'
 import Button from '../Button/Button'
 import Icon from '../Icon/Icon'
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 import { faLinkedinIn, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Hero() {
   return (
@@ -21,16 +23,29 @@ export default function Hero() {
             <span>Manutenção predial</span>
           </div>
         </div>
+        <Button 
+          content="Quero fazer um orçamento"
+          bgColor="transparent"
+          color="var(--red-700)"
+          border="2px solid var(--red-700)"
+          borderRadius="100px"
+          padding="1rem 5rem"
+          fontWeight="700"
+
+          hoverBgColor="var(--red-400)"
+          hoverBorder="2px solid var(--red-400)"
+          hoverColor="var(--white)"
+        />
         <div className={styles.socialWrapper}>
           <Icon
             size="62px"
             bgColor="var(--white)"
             link="https://www.linkedin.com/company/industrial-service-br/"
             icon={faLinkedinIn}
-            iconSize="lg"
+            iconSize="xl"
             iconColor="var(--red-700)"
 
-            hoverBgColor="var(--red-700)"
+            hoverBgColor="var(--red-400)"
             hoverIconColor="var(--white)"
           />
           <Icon
@@ -38,10 +53,10 @@ export default function Hero() {
             bgColor="var(--white)"
             link="https://www.instagram.com/industrialservicebr/"
             icon={faInstagram}
-            iconSize="lg"
+            iconSize="xl"
             iconColor="var(--red-700)"
 
-            hoverBgColor="var(--red-700)"
+            hoverBgColor="var(--red-400)"
             hoverIconColor="var(--white)"
           />
           <Icon 
@@ -49,12 +64,20 @@ export default function Hero() {
             bgColor="var(--white)"
             link="https://wa.me/5562982880057"
             icon={faWhatsapp}
-            iconSize="lg"
+            iconSize="xl"
             iconColor="var(--red-700)"
 
-            hoverBgColor="var(--red-700)"
+            hoverBgColor="var(--red-400)"
             hoverIconColor="var(--white)"
           />
+        </div>
+      </div>
+      <div className={styles.arrowWrapper}>
+        <span className={styles.arrowText}> Conheça a Industrial Service</span>
+        <div className={`${styles.arrow} ${styles.bounce}`}>
+          <a href="#partners">
+            <FontAwesomeIcon icon={faArrowDown} size="md" color="var(--white)" />
+          </a>
         </div>
       </div>
     </section>
