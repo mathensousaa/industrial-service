@@ -134,12 +134,13 @@
 
 @media (max-width: 991.98px) {
     .hero {
-        padding: 0 2rem;
+        padding: 0;
         text-align: center;
         justify-content: center;
     }
 
-    .wrapper {
+    .hero .wrapper {
+        padding: 0 1rem;
         width: 100%;
     }
 
@@ -172,7 +173,7 @@
     .socialWrapper {
         margin: 2rem auto;
         justify-content: space-between;
-        width: calc(62px * 3 + 2rem);
+        width: calc(68px * 3 + 2rem);
     }
 }
 
@@ -182,6 +183,6 @@
 
 @media (max-width: 575.98px) {
     .hero {
-        padding: 0 1rem;
+        margin: 0;
     }
 }
