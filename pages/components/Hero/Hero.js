@@ -1,17 +1,21 @@
-import styles from './Hero.module.css'
-import Button from '../Button/Button'
-import Icon from '../Icon/Icon'
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
-
-import { faLinkedinIn, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import styles from "./Hero.module.css";
+import Button from "../Button/Button";
+import Icon from "../Icon/Icon";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLinkedinIn,
+  faInstagram,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.wrapper}>
         <h1>
-          Transformando <strong>segurança</strong> em <strong>produtividade</strong>
+          Transformando <strong>segurança</strong> em{" "}
+          <strong>produtividade</strong>
         </h1>
         <div className={styles.textWrapper}>
           <h3> aqui você encontra</h3>
@@ -23,7 +27,7 @@ export default function Hero() {
             <span>Manutenção predial</span>
           </div>
         </div>
-        <Button 
+        <Button
           content="Quero fazer um orçamento"
           bgColor="transparent"
           color="var(--red-700)"
@@ -31,7 +35,6 @@ export default function Hero() {
           borderRadius="100px"
           padding="1rem 5rem"
           fontWeight="700"
-
           hoverBgColor="var(--red-400)"
           hoverBorder="2px solid var(--red-400)"
           hoverColor="var(--white)"
@@ -44,7 +47,6 @@ export default function Hero() {
             icon={faLinkedinIn}
             iconSize="xl"
             iconColor="var(--red-700)"
-
             hoverBgColor="var(--red-400)"
             hoverIconColor="var(--white)"
           />
@@ -55,18 +57,16 @@ export default function Hero() {
             icon={faInstagram}
             iconSize="xl"
             iconColor="var(--red-700)"
-
             hoverBgColor="var(--red-400)"
             hoverIconColor="var(--white)"
           />
-          <Icon 
+          <Icon
             size="62px"
             bgColor="var(--white)"
             link="https://wa.me/5562982880057"
             icon={faWhatsapp}
             iconSize="xl"
             iconColor="var(--red-700)"
-
             hoverBgColor="var(--red-400)"
             hoverIconColor="var(--white)"
           />
@@ -76,10 +76,14 @@ export default function Hero() {
         <span className={styles.arrowText}> Conheça a Industrial Service</span>
         <div className={`${styles.arrow} ${styles.bounce}`}>
           <a href="#partners">
-            <FontAwesomeIcon icon={faArrowDown} size="md" color="var(--white)" />
+            <FontAwesomeIcon
+              icon={faArrowDown}
+              size="md"
+              color="var(--white)"
+            />
           </a>
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,0 +1,44 @@
+.partners {
+    text-align: center;
+    padding: 2rem 0;
+    width: 100vw;
+}
+
+.logos {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.partners img {
+    width: 12%;
+    max-height: 32px;
+    max-width: 140px;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: 0.5s;
+    opacity: 0.75;
+}
+
+.partners img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+@media (max-width: 997.98px) {
+    .partners {
+        padding: 2rem 1rem;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: left;
+        overflow: hidden;
+    }
+
+    .partners img {
+        width:30%;
+    }
+}

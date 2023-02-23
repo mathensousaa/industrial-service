@@ -1,15 +1,9 @@
 import Head from 'next/head';
-import { useState } from 'react';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
-import Button from './components/Button/Button';
 import Partners from './components/Parceiros/Partners';
-import App from './_app.js';
-import Image from 'next/image';
 
-
-
-function Home( ) {
+export default function Home( ) {
     return (
         <>
             <Head>
@@ -25,15 +19,11 @@ function Home( ) {
                 <meta name="theme-color" content="#ffffff" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-                
             </Head>
 
             <Header/>
             <Hero />
-            <i class="fa-solid fa-user"></i>
+            <Partners />
         </>
     )
 }
-
-export default Home 
