@@ -1,0 +1,71 @@
+.company {
+    display: flex;
+    text-align: center;
+    height: 780px;
+}
+
+.company h2 {
+    text-transform: uppercase;
+}
+
+.company p, .company h2 {
+    padding-top: 2rem;
+}
+
+.companyAbout1, .companyAbout2, .companyAbout3 {
+    background-position: center;
+    color: var(--white);
+    padding: 4rem 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.companyAbout1 {
+    background-image: linear-gradient(rgba(226, 59, 69, 0.25), rgba(226, 59, 69, 1)), url(../../../public/aboutBackground1.jpg);
+}
+
+.companyAbout2 {
+    background-image: linear-gradient(rgba(226, 59, 69, 0.25), rgba(226, 59, 69, 1)), url(../../../public/aboutBackground2.jpg);
+}
+
+.companyAbout3 {
+    background-image: linear-gradient(rgba(226, 59, 69, 0.25), rgba(226, 59, 69, 1)), url(../../../public/aboutBackground3.jpg);
+}
+
+@media (max-width: 1199.98px) {
+    .companyAbout1, .companyAbout2, .companyAbout3 {
+        padding: 4rem 4rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .company {
+        background-image: linear-gradient(rgba(226, 59, 69, 0.25), rgba(226, 59, 69, 1));
+        display: block;
+        height: 100%;
+        text-align: center;
+    }
+    .companyAbout1, .companyAbout2, .companyAbout3 {
+        width: 100%;
+        padding: 2rem 4rem;
+    }
+
+    .companyAbout1 {
+        background-image: linear-gradient(rgba(226, 59, 69, 0.25), rgba(226, 59, 69, 0.5)), url(../../../public/aboutBackground1.jpg);
+    }
+    
+    .companyAbout2 {
+        background-image: linear-gradient(rgba(226, 59, 69, 0.5), rgba(226, 59, 69, 0.74)), url(../../../public/aboutBackground2.jpg);
+    }
+    
+    .companyAbout3 {
+        background-image: linear-gradient(rgba(226, 59, 69, 0.75), rgba(226, 59, 69, 1)), url(../../../public/aboutBackground3.jpg);    }
+}
+
+@media (max-width: 575.89px) {
+    .companyAbout1, .companyAbout2, .companyAbout3 {
+        padding: 2rem 2rem;
+        font-size: 1rem;
+    }
+}
