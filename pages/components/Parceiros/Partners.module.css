@@ -1,20 +1,27 @@
 .partners {
     text-align: center;
-    padding: 2rem 0;
-    width: 100vw;
+    padding: 2rem 0.5rem;
 }
 
 .logos {
     margin-top: 2rem;
+}
+
+.logos ul {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.logos li {
+    padding: 0 2rem;
 }
 
 .partners img {
-    width: 12%;
-    max-height: 32px;
-    max-width: 140px;
+    max-height: 48px;
+    max-width: 120px;
     aspect-ratio: 16/9;
     object-fit: contain;
     filter: grayscale(100%);
@@ -28,17 +35,12 @@
 }
 
 @media (max-width: 997.98px) {
-    .partners {
-        padding: 2rem 1rem;
-    }
-
-    .logos {
-        display: flex;
-        justify-content: left;
-        overflow: hidden;
+    .logos li {
+        padding: 0 0.5rem;
+        flex: 1 1 25%;
     }
 
     .partners img {
-        width:30%;
+        width: 100%;
     }
 }
