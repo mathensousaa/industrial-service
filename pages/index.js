@@ -7,7 +7,13 @@ export default function Home( ) {
     return (
         <>
             <Head>
-                <title>Industrial Service</title>
+                <meta charSet="utf-8" />
+                <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport" />
+                <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+                <meta http-equiv="x-dns-prefetch-control" content="on" />
+                <meta name="referrer" content="no-referrer" />
+                <meta name="description" content="A Industrial Service é uma empresa especializada em serviços de alpinismo e manutenção industrial e predial, com treinamentos de acesso por cordas. Atuando desde 2011, conta com equipe altamente qualificada, garantindo máxima segurança em seus serviços."/>
+                <title>Alpinismo industrial e predial | Industrial Service</title>
                 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
