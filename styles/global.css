@@ -31,6 +31,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -45,8 +46,4 @@ body, input, textarea, button {
 
 a {
     text-decoration: none;
-}
-
-::-webkit-scrollbar {
-    display: none;
 }
