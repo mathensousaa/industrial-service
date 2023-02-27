@@ -12,7 +12,7 @@ export default function Services() {
                     </div>
                 </div>
                 <div className={styles.servicesImage}>
-                    <p>Imagem</p>
+                    <p>Image</p>
                 </div>
             </div>
         </section>
