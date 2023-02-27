@@ -8,6 +8,7 @@ export default function Services() {
                 <div className={styles.servicesItens}>
                     <h2>Nossos Serviços</h2>
                     <p>Oferecemos soluções completas e personalizadas em segurança e manutenção industrial e predial</p>
+                    <Accordion />
                 </div>
                 <div className={styles.servicesImage}>
                     <p>Imagem</p>
