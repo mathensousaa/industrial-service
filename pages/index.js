@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Partners from './components/Parceiros/Partners';
 import Company from './components/Empresa/Company';
+import Services from './components/Servicos/Services';
 
 export default function Home( ) {
     return (
@@ -32,6 +33,7 @@ export default function Home( ) {
             <Hero />
             <Partners />
             <Company />
+            <Services />
         </>
     )
 }

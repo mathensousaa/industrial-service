@@ -1,7 +1,20 @@
+import styles from './Services.module.css'
+
 export default function Services() {
     return (
-        <section>
-            <h1>Serviços</h1>
+        <section className={styles.services}>
+            <div className={styles.servicesContainer}>
+                <div className={styles.servicesItens}>
+                    <h2>Nossos Serviços</h2>
+                    <p>Oferecemos soluções completas e personalizadas em segurança e manutenção industrial e predial</p>
+                    <div>
+
+                    </div>
+                </div>
+                <div className={styles.servicesImage}>
+                    <p>Imagem</p>
+                </div>
+            </div>
         </section>
     )
 }
