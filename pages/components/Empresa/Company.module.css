@@ -1,7 +1,7 @@
 .company {
     display: flex;
     text-align: center;
-    height: 780px;
+    height: 75vh;
 }
 
 .company h2 {
@@ -15,7 +15,7 @@
 .companyAbout1, .companyAbout2, .companyAbout3 {
     background-position: center;
     color: var(--white);
-    padding: 4rem 8rem;
+    padding: 4rem 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
