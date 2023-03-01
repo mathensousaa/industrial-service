@@ -1,0 +1,45 @@
+.contact {
+    background: linear-gradient(to right, var(--red-900), #180000);
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    padding: var(--padding);
+}
+
+.contact :first-child {
+    padding-right: 2rem;
+}
+
+.contact .contactColumn {
+    width: 50%;
+}
+
+.contact .contactColumn h2 {
+    font-size: var(--h2FontSize);
+    margin-bottom: 2rem;
+}
+
+.contact .contactColumn p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+@media (max-width: 1199.98px) {
+    .contact {
+        --padding: 2rem 8rem;
+    }
+    
+}
+
+@media (max-width: 991.98px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact .contactColumn {
+        width: 100%;
+    }
+    
+}
