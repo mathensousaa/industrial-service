@@ -6,10 +6,7 @@
     align-items: center;
     height: 80vh;
     padding: var(--padding);
-}
-
-.contact :first-child {
-    padding-right: 2rem;
+    gap: 4rem;
 }
 
 .contact .contactColumn {
