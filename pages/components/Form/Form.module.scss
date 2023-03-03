@@ -37,3 +37,38 @@
     border-color: var(--white);
     z-index: 1;
 }
+
+.budgetForm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.col input {
+    width: 100%;
+}
+
+.formContainer {
+    background-color: var(--white);
+    color: var(--grey-900);
+    padding: 2rem;
+    height: 90%;
+} 
+
+.budgetForm,
+.workForm {
+    transition: all .5s ease;
+}
+
+.req {
+    color: var(--red-700);
+} 
+
+.noDisplay {
+    display: none;
+}
