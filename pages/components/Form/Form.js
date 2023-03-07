@@ -2,6 +2,23 @@ import styles from './Form.module.scss'
 import React from 'react';
 
 export default function Form () {
+
+    const services = [
+        'Acesso por cordas',
+        'Resgate em altura e espaço confinado',
+        'Treinamentos',
+        'Manutenção predial',
+        'Manutenção industral'
+    ]
+
+    const [name, setName] = React.useState('');
+    const [email, setEmail] = React.useState('');
+    const [company, setCompany] = React.useState('');
+    const [service, setService] = React.useState('');
+    const [address, setAddress] = React.useState('');
+    const [howFinded, setHowFinded] = React.useState('');
+    const [message, setMessage] = React.useState('');
+
     const [isVisible, setIsVisible] = React.useState({
         id: "comOne",
     });
@@ -20,7 +37,7 @@ export default function Form () {
                 <label for='comTwo'>Trabalhe conosco</label>
             </fieldset>
             <div className={styles.formContainer}>
-                <form className={`${styles.budgetForm} ${isVisible.id === "comOne" ? `comOne` : "comOne" && styles.noDisplay}`}>
+                <form className={`${styles.budgetForm} ${isVisible.id === "comOne" ? `comOne` : "comOne" && styles.noDisplay}`} onSubmit={() => {}}>
                     <div className={styles.col}>
                         <label for='name'>Nome<small className={styles.req}>*</small></label>
                         <input type='text' id='name' required></input>
