@@ -23,9 +23,89 @@
     text-align: justify;
 }
 
+.formSwitch {
+    display: flex;
+    padding-right: 0;
+    border: none;
+}
+
+.formSwitch input {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -9999px;
+}
+
+.formSwitch label {
+    vertical-align: middle;
+}
+
+.formSwitch input + label {
+    background-color: var(--grey-50);
+    padding: 1rem 2rem;
+    color: var(--grey-700);
+    width: 500%;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    border: 1px solid var(--grey-50);
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 	border-color .50s ease-out, 
+					color .50s ease-out, 
+					background-color .50s ease-out,
+					box-shadow .50s ease-out;
+}
+
+.formSwitch input:hover + label {
+    border-color: var(--grey-900);
+}
+
+.formSwitch input:checked + label {
+    background-color: var(--white);
+    color: var(--grey-900);
+    border-color: var(--white);
+    z-index: 1;
+}
+
+.budgetForm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.col input {
+    width: 100%;
+}
+
+.formsContainer {
+    background-color: var(--white);
+    color: var(--grey-900);
+    padding: 2rem;
+    height: 90%;
+} 
+
+.budgetForm,
+.workForm {
+    transition: all .5s ease;
+}
+
+.req {
+    color: var(--red-700);
+} 
+
+.noDisplay {
+    display: none;
+}
+
 @media (max-width: 1199.98px) {
     .contact {
-        --padding: 2rem 8rem;
+        --padding: 2rem 4rem;
+        height: 100%;
     }
     
 }
@@ -39,4 +119,21 @@
         width: 100%;
     }
     
+}
+
+@media (max-width: 767.98px) {
+    .contact {
+        --padding: 2rem;
+    }
+
+    .budgetForm {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+    .formSwitch label {
+        vertical-align: middle;
+    }
 }
