@@ -11,7 +11,7 @@ export default function TextArea (props) {
 
     return (
         <div className={styles.textArea}>
-            <label for={props.textAreaID}>{props.labelContent}{isRequired()}</label>
+            <label htmlFor={props.textAreaID}>{props.labelContent}{isRequired()}</label>
             <textarea id={props.textAreaID} required={props.textAreaRequired} placeholder={props.textAreaPlaceholder} maxLength={props.maxLength}></textarea>
         </div>
     )

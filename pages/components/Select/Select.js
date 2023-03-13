@@ -10,10 +10,10 @@ export default function Select (props) {
     }
     return (
         <div className={styles.select}>
-            <label for={props.selectID}>{props.labelContent}{isRequired()}</label>
-            <select id={props.selectID} required={props.selectRequired} placeholder={props.inputPlaceholder}>\
-                <option value="" disabled selected>Selecione...</option>
-                {props.itens.map(item => <option>{item}</option>)}
+            <label htmlFor={props.selectID}>{props.labelContent}{isRequired()}</label>
+            <select defaultValue={'DEFAULT'} id={props.selectID} required={props.selectRequired} placeholder={props.inputPlaceholder}>\
+                <option value="DEFAULT" disabled>Selecione...</option>
+                {props.itens.map(item => <option key={item}>{item}</option>)}
             </select>
         </div>
     )

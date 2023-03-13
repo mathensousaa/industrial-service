@@ -76,7 +76,7 @@ export default function Contact() {
                         name="switcher"
                         id="comOne"
                     ></input>
-                    <label for="comOne">Orçamento</label>
+                    <label htmlFor="comOne">Orçamento</label>
                     <input
                         onClick={(e) => {
                             toggleForm(e);
@@ -85,7 +85,7 @@ export default function Contact() {
                         name="switcher"
                         id="comTwo"
                     ></input>
-                    <label for="comTwo">Trabalhe conosco</label>
+                    <label htmlFor="comTwo">Trabalhe conosco</label>
                 </fieldset>
                 <div className={styles.formsContainer}>
                     <form
@@ -149,8 +149,7 @@ export default function Contact() {
                         <div className={styles.textArea}>
                             <TextArea
                                 labelContent="Mensagem"
-                                textAreaID="message"
-                                textAreaRequired="required"
+                                textAreaID="message"    
                                 textAreaPlaceholder="Se desejar, descreva com mais detalhes o que precisa."
                                 maxLength="500"
                             />
