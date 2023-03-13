@@ -2,7 +2,7 @@
     background-color: var(--grey-50);
     border: 1px solid var(--grey-50);
     border-radius: .5rem;
-    padding: 1rem;
+    padding: .75rem;
     margin: .5rem 0 1rem;
     font-size: .9rem;
     transition: 0.5s ease;

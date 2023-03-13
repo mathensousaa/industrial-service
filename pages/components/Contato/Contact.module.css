@@ -1,10 +1,13 @@
+.textArea {
+    width: 100%;
+}
+
 .contact {
     background: linear-gradient(to right, var(--red-900), #180000);
     color: var(--white);
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    height: 80vh;
+    height: 100%;
     padding: var(--padding);
     gap: 4rem;
 }
@@ -23,6 +26,8 @@
     text-align: justify;
 }
 
+
+
 .formSwitch {
     display: flex;
     padding-right: 0;
@@ -37,7 +42,9 @@
 }
 
 .formSwitch label {
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .formSwitch input + label {
@@ -69,6 +76,13 @@
 
 .budgetForm {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.workForm {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -78,7 +92,7 @@
     width: 45%;
 }
 
-.col input {
+.col input, .col select {
     width: 100%;
 }
 
@@ -87,12 +101,15 @@
     color: var(--grey-900);
     padding: 2rem;
     height: 90%;
+    border-radius: 0 0 10px 10px;
 } 
 
 .budgetForm,
 .workForm {
     transition: all .5s ease;
 }
+
+
 
 .noDisplay {
     display: none;
