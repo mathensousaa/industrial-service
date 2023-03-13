@@ -13,7 +13,9 @@ export default function Select (props) {
             <label htmlFor={props.selectID}>{props.labelContent}{isRequired()}</label>
             <select defaultValue={'DEFAULT'} id={props.selectID} required={props.selectRequired} placeholder={props.inputPlaceholder}>\
                 <option value="DEFAULT" disabled>Selecione...</option>
-                {props.itens.map(item => <option key={item}>{item}</option>)}
+                {props.itens?.map((item) => {
+                    return <option key={item}>{item}</option>
+                })}
             </select>
         </div>
     )
