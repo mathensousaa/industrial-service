@@ -1,5 +1,5 @@
 import styles from "./Contact.module.css";
-import Form from "../Form/Form";
+import Input from "../Input/Input"
 import React from "react";
 
 export default function Contact() {
@@ -70,11 +70,18 @@ export default function Contact() {
                         onSubmit={() => { }}
                     >
                         <div className={styles.col}>
-                            <label for='name'>Nome<small className={styles.req}>*</small></label>
-                            <input type='text' id='name' required></input>
-
-                            <label for='company'>Empresa<small className={styles.req}>*</small></label>
-                            <input type='text' id='company' required></input>
+                            <Input
+                                labelContent="Nome"
+                                inputID="name"
+                                type="text"
+                                inputRequired="required"
+                            />
+                            <Input
+                                labelContent="Empresa"
+                                inputID="company"
+                                type="text"
+                                inputRequired="required"
+                            />
 
                             <label for='services'>Serviço desejado<small className={styles.req}>*</small></label>
                             <select name='services' id='services' required>
@@ -82,11 +89,12 @@ export default function Contact() {
                             </select>
                         </div>
                         <div className={styles.col}>
-                            <label for='email'>E-mail corporativo ou comum<small className={styles.req}>*</small></label>
-                            <input type='email' id='email' required></input>
-
-                            <label for='address'>Endereço da empresa à realizar o serviço<small className={styles.req}>*</small></label>
-                            <input type='text' id='company' required></input>
+                            <Input
+                                labelContent="E-mail corporativo ou comum"
+                                inputID="email"
+                                type="text"
+                                inputRequired="required"
+                            />
 
                             <label for='howFinded'>Como encontrou a Industrial Service?<small className={styles.req}>*</small></label>
                             <select name='howFinded' id='howFinded' required>

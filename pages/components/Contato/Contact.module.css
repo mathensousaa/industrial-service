@@ -94,10 +94,6 @@
     transition: all .5s ease;
 }
 
-.req {
-    color: var(--red-700);
-} 
-
 .noDisplay {
     display: none;
 }
