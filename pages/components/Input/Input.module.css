@@ -1,0 +1,18 @@
+.input input {
+    background-color: var(--grey-50);
+    border: 1px solid var(--grey-50);
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: .5rem 0 1rem;
+    font-size: .9rem;
+    transition: 0.5s ease;
+}
+
+.input input:focus {
+    outline: none !important;
+    border: 1px solid var(--red-200);
+}
+
+.req {
+    color: var(--red-700);
+} 

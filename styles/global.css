@@ -7,6 +7,7 @@
     --grey-700: #5f6368;
     --grey-900: #212529;
 
+    --red-200: #eb5861;
     --red-400: #e23b45;
     --red-700: #fe0002;
     --red-800: #960000;
@@ -26,7 +27,7 @@
     --ss-md: 62rem;
     --ss-sm: 36rem;
 
-    --padding: 2rem 276px;
+    --padding: 2rem 8rem;
 
     --h2FontSize: 2rem;
 }
