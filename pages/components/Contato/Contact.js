@@ -1,5 +1,7 @@
 import styles from "./Contact.module.css";
-import Input from "../Input/Input"
+import Input from "../Input/Input";
+import Select from "../Select/Select";
+import TextArea from "../TextArea/TextArea";
 import React from "react";
 
 export default function Contact() {
@@ -12,6 +14,30 @@ export default function Contact() {
             id: e.target.id,
         });
     };
+
+    const services = [
+        "Acesso por cordas",
+        "Resgate em altura e espaço confinado",
+        "Treinamentos",
+        "Manutenção predial",
+        "Manutenção industrial"
+    ]
+
+    const howFinded = [
+        "Indicação",
+        "Facebook",
+        "Instagram",
+        "Google",
+        "Linkedin",
+        "Outros"
+    ]
+
+    const contactReason = [
+        "Orçamento",
+        "Tirar dúvidas",
+        "Quero conhecer a empresa, mas sem pretenção de contrato",
+        "Outros"
+    ]
 
     return (
         <section className={styles.contact}>
@@ -50,7 +76,7 @@ export default function Contact() {
                         name="switcher"
                         id="comOne"
                     ></input>
-                    <label for="comOne">Orçamento</label>
+                    <label htmlFor="comOne">Orçamento</label>
                     <input
                         onClick={(e) => {
                             toggleForm(e);
@@ -59,7 +85,7 @@ export default function Contact() {
                         name="switcher"
                         id="comTwo"
                     ></input>
-                    <label for="comTwo">Trabalhe conosco</label>
+                    <label htmlFor="comTwo">Trabalhe conosco</label>
                 </fieldset>
                 <div className={styles.formsContainer}>
                     <form
@@ -77,29 +103,56 @@ export default function Contact() {
                                 inputRequired="required"
                             />
                             <Input
+                                labelContent="Telefone"
+                                inputID="telephone"
+                                type="text"
+                                inputRequired="required"
+                                inputPlaceholder="(99) 99999-9999"
+                                keyboardType="numeric"
+                            />
+                            <Input
                                 labelContent="Empresa"
                                 inputID="company"
                                 type="text"
                                 inputRequired="required"
                             />
 
-                            <label for='services'>Serviço desejado<small className={styles.req}>*</small></label>
-                            <select name='services' id='services' required>
-                                <option value="value1">Acesso por cordas</option>
-                            </select>
+                            <Select 
+                                labelContent="Serviço desejado"
+                                selectID="services"
+                                selectRequired="required"
+                                itens={services}
+                            />
                         </div>
                         <div className={styles.col}>
                             <Input
                                 labelContent="E-mail corporativo ou comum"
                                 inputID="email"
-                                type="text"
+                                type="email"
                                 inputRequired="required"
                             />
 
-                            <label for='howFinded'>Como encontrou a Industrial Service?<small className={styles.req}>*</small></label>
-                            <select name='howFinded' id='howFinded' required>
-                                <option value="value1">Facebook</option>
-                            </select>
+                            <Select 
+                                labelContent="Como encontrou a Industrial Service?"
+                                selectID="howFinded"
+                                selectRequired="required"
+                                itens={howFinded}
+                            />
+
+                            <Select 
+                                labelContent="Motivo do contato"
+                                selectID="contactReason"
+                                selectRequired="required"
+                                itens={contactReason}
+                            />
+                        </div>
+                        <div className={styles.textArea}>
+                            <TextArea
+                                labelContent="Mensagem"
+                                textAreaID="message"    
+                                textAreaPlaceholder="Se desejar, descreva com mais detalhes o que precisa."
+                                maxLength="500"
+                            />
                         </div>
                     </form>
                     <form
@@ -108,7 +161,43 @@ export default function Contact() {
                             : "comTwo" && styles.noDisplay
                             }`}
                     >
-                        Trabalhe conosco
+                        <div className={styles.col}>
+                            <Input
+                                labelContent="Nome completo"
+                                inputID="name"
+                                type="text"
+                                inputRequired="required"
+                            />
+
+                            <Input
+                                labelContent="Telefone"
+                                inputID="telephone"
+                                type="text"
+                                inputRequired="required"
+                                inputPlaceholder="(99) 99999-9999"
+                                keyboardType="numeric"
+                            />
+                        </div>
+                        <div className={styles.col}>
+                            <Input
+                                labelContent="E-mail"
+                                inputID="email"
+                                type="email"
+                                inputRequired="required"
+                            />
+                            <Input
+                                labelContent="Link do perfil no Linkedin"
+                                inputID="linkedinProfile"
+                                type="url"
+                            />
+                            <Input
+                                labelContent="Anexar currículo (PDF, DOC, DOCX)"
+                                inputID="curriculum"
+                                type="file"
+                                accept=".pdf, .doc, .docx"
+                                inputRequired="required"
+                            />
+                        </div>
                     </form>
                 </div>
             </div>

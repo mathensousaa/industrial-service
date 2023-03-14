@@ -78,7 +78,7 @@ export default function Hero() {
           <a href="#partners">
             <FontAwesomeIcon
               icon={faArrowDown}
-              size="md"
+              size="1x"
               color="var(--white)"
             />
           </a>
