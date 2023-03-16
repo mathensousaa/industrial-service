@@ -22,10 +22,11 @@
     --fs-300: 0.75rem;
 
     /* screen size */
-    --ss-xl: 87.5rem;  
-    --ss-l: 75rem;
-    --ss-md: 62rem;
-    --ss-sm: 36rem;
+    --ss-xl: 1399.98px;  
+    --ss-l: 1199.98px;
+    --ss-md: 991.98px;
+    --ss-sm: 767.98px;
+    --ss-xsm: 575.98px;
 
     --padding: 6rem 8rem;
 

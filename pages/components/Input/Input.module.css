@@ -1,3 +1,11 @@
+.input input[type="file"] {
+    border: 1px dashed var(--grey-700);
+}
+
+.input input[type="file"]:hover {
+    border: 1px dashed var(--red-400);
+}
+
 .input input {
     background-color: var(--grey-50);
     border: 1px solid var(--grey-50);

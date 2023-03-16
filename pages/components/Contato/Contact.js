@@ -190,7 +190,10 @@ export default function Contact() {
                                 inputID="linkedinProfile"
                                 type="url"
                             />
+                        </div>
+                        <div className={styles.curriculumDiv}>
                             <Input
+                                className={styles.curriculum}
                                 labelContent="Anexar currículo (PDF, DOC, DOCX)"
                                 inputID="curriculum"
                                 type="file"

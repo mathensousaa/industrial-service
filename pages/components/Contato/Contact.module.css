@@ -100,7 +100,6 @@
     background-color: var(--white);
     color: var(--grey-900);
     padding: 2rem;
-    height: 90%;
     border-radius: 0 0 10px 10px;
 } 
 
@@ -109,7 +108,26 @@
     transition: all .5s ease;
 }
 
+.curriculumDiv {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--grey-50);
+}
 
+.curriculumDiv div {
+    display: flex;
+    flex-direction: column;
+}
+
+.curriculumDiv input::-webkit-file-upload-button {
+    border: 1px solid var(--grey-700);
+    background-color: var(--white);
+    padding: 8px 16px;
+    border-radius: 10px;
+    margin-right: 1rem;
+    width: 50%;
+}
 
 .noDisplay {
     display: none;
@@ -117,7 +135,7 @@
 
 @media (max-width: 1199.98px) {
     .contact {
-        --padding: 2rem 4rem;
+        --padding: 4rem;
         height: 100%;
     }
     
@@ -136,7 +154,7 @@
 
 @media (max-width: 767.98px) {
     .contact {
-        --padding: 2rem;
+        --padding: 4rem 2rem;
     }
 
     .budgetForm {
@@ -148,5 +166,9 @@
     }
     .formSwitch label {
         vertical-align: middle;
+    }
+
+    .curriculumDiv input {
+        flex-direction: column;
     }
 }
