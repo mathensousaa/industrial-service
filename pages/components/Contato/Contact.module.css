@@ -138,6 +138,10 @@
         --padding: 4rem;
         height: 100%;
     }
+
+    .textContent {
+        width: 75%;
+    }
     
 }
 
@@ -147,6 +151,10 @@
     }
 
     .contact .contactColumn {
+        width: 100%;
+    }
+
+    .textContent {
         width: 100%;
     }
     

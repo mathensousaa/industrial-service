@@ -108,7 +108,7 @@ export default function Contact() {
                                 type="text"
                                 inputRequired="required"
                                 inputPlaceholder="(99) 99999-9999"
-                                keyboardType="numeric"
+                                inputMode="numeric"
                             />
                             <Input
                                 labelContent="Empresa"
@@ -175,7 +175,7 @@ export default function Contact() {
                                 type="text"
                                 inputRequired="required"
                                 inputPlaceholder="(99) 99999-9999"
-                                keyboardType="numeric"
+                                inputMode="numeric"
                             />
                         </div>
                         <div className={styles.col}>
