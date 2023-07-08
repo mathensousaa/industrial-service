@@ -12,6 +12,7 @@
 
 .hero .wrapper {
     width: 75%;
+    animation: slide-in 1s forwards;
 }
 
 .hero h1 {

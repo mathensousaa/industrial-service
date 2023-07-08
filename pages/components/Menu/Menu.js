@@ -2,23 +2,23 @@ import styles from './Menu.module.css'
 import Link from 'next/link';
 import Button from '../Button/Button';
 
-export default function Menu () {
+export default function Menu (props) {
     return (
         <ul className={styles.menu}>
             <li>
-                <Link href="#company">A empresa</Link>
+                <Link className={styles[props.variant]} href="#company">A empresa</Link>
             </li>
             <li>
-                <Link href="#services">Serviços</Link>
+                <Link className={styles[props.variant]} href="#services">Serviços</Link>
             </li>
             <li>
-                <Link href="#projects">Projetos</Link>
+                <Link className={styles[props.variant]} href="#projects">Projetos</Link>
             </li>
             <li>
-                <Link href="#contact">Contato</Link>
+                <Link className={styles[props.variant]} href="#contact">Contato</Link>
                 </li>
             <li>
-                <Link href="#informations">Informações</Link>
+                <Link className={styles[props.variant]} href="#informations">Informações</Link>
             </li>
         </ul>
     )
