@@ -5,9 +5,7 @@
     justify-content: end;
     flex-direction: column;
     align-items: center;
-    height: 25vh;
-    padding: 0 6rem;
-    padding-bottom: 2rem;
+    padding: 2rem 6rem;
 }
 
 .footer div.menuWrapper {
@@ -17,7 +15,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
 }
 
 .footer div a {
@@ -33,12 +30,12 @@
 .socialWrapper {
     display: flex;
     gap:1rem;
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 1199.98px) {
     .footer {
-        padding: 0 4rem;
-        padding-bottom: 2rem;
+        padding: 2rem 4rem;
     }
 }
 
@@ -53,7 +50,6 @@
 
 @media (max-width: 575.89px) {
     .footer {
-        padding: 0 2rem;
-        padding-bottom: 2rem;
+        padding: 2rem 2rem;
     }
 }
