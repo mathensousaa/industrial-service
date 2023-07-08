@@ -11,7 +11,7 @@ export default function Services() {
                     <Accordion />
                 </div>
                 <div className={styles.servicesImage}>
-                    <p>Imagem</p>
+                    <p>Image</p>
                 </div>
             </div>
         </section>
