@@ -3,6 +3,8 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Partners from './components/Parceiros/Partners';
 import Company from './components/Empresa/Company';
+import Contact from './components/Contato/Contact'
+import Footer from './components/Footer/Footer'
 
 export default function Home( ) {
     return (
@@ -32,6 +34,8 @@ export default function Home( ) {
             <Hero />
             <Partners />
             <Company />
+            <Contact />
+            <Footer />
         </>
     )
 }

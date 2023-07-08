@@ -30,8 +30,25 @@
     transition: all 0.45s;    
 }
 
+.menu a.light::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 4px;
+    width: 0px;
+    height: 2px;
+    background-color: var(--white);
+    transition: all 0.45s; 
+}
+
 .menu a:hover::before {
     width: 90%;
     transform: scaleX(1.1);
     background-color: var(--grey-900);
+}
+
+.menu a.light:hover::before {
+    width: 90%;
+    transform: scaleX(1.1);
+    background-color: var(--white);
 }
