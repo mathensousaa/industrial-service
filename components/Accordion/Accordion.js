@@ -12,7 +12,7 @@ function AccordionServices() {
       const currentIndex = Services.findIndex((service) => service.id === activeItem);
       const nextIndex = (currentIndex + 1) % Services.length;
       setActiveItem(Services[nextIndex].id);
-    }, 8000);
+    }, 7000);
 
     return () => {
       clearInterval(timer); // Limpar o temporizador ao desmontar o componente
@@ -24,13 +24,13 @@ function AccordionServices() {
   };
 
   return (
-    <Accordion activeKey={activeItem} defaultActiveKey="0">
+    <Accordion activeKey={activeItem} defaultActiveKey="0" className={styles.Accordion}>
       {Services.map((service) => (
-        <Accordion.Item key={service.id} eventKey={service.id}>
+        <Accordion.Item key={service.id} eventKey={service.id} className={styles.accordionItem}>
           <Accordion.Header onClick={() => handleItemClick(service.id)} className={styles.accordionHeader}>
             <Icon
               size="40px"
-              bgColor={activeItem === service.id ? 'var(--red-400)' : 'transparent'}
+              bgColor={activeItem === service.id ? 'var(--red-400)' : 'var(--white)'}
               icon={service.icon}
               iconSize="lg"
               iconColor={activeItem === service.id ? 'var(--white)' : 'var(--red-400)'}

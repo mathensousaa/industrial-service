@@ -24,14 +24,14 @@ export const Services = [
     },
     {
         id: '3',
-        title: 'Treinamentos de segurança do trabalho',
+        title: 'Treinamentos',
         description: 'O serviço de treinamentos de segurança do trabalho capacita colaboradores para atuar de maneira segura e eficiente em suas atividades. Com equipe de professores altamente capacitados, oferecemos treinamentos teóricos e práticos que promovem a cultura de segurança no ambiente de trabalho.',
         icon: faPersonChalkboard,
         image: {},
     },
     {
         id: '4',
-        title: 'Resgate em altura e espaço confianado',
+        title: 'Espaço confinado',
         description: 'O serviço de resgate em altura e espaço confinado garante a segurança de trabalhadores e equipamentos em situações de emergência. Com equipe capacitada e equipamentos de última geração, oferece soluções rápidas e eficientes para garantir a integridade de todos envolvidos.',
         icon: faHelmetSafety,
         image: {},
