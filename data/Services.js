@@ -1,4 +1,4 @@
-import { faLink ,faHelmetSafety, faPersonChalkboard, faBuildingCircleCheck, faIndustry } from "@fortawesome/free-solid-svg-icons"
+import { faLink ,faHelmetSafety, faPersonChalkboard, faBuilding, faIndustry } from "@fortawesome/free-solid-svg-icons"
 
 export const Services = [
     {
@@ -12,7 +12,7 @@ export const Services = [
         id: '1',
         title: 'Manutenção industrial',
         description: 'O serviço de manutenção da estrutura industrial é crucial para aumentar a segurança, eficiência e produtividade da empresa. A manutenção preventiva e corretiva garante que as instalações estejam sempre em boas condições, otimizando o processo produtivo e evitando interrupções e desperdícios.',
-        icon: faBuildingCircleCheck,
+        icon: faBuilding,
         image: {},
     },
     {

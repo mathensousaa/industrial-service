@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
-import { Services } from '../Servicos/ServicesArray';
+import { Services } from '../../../data/Services'
 import Icon from '../Icon/Icon';
 import styles from './Accordion.module.css';
 
-function AccordionIndustrial() {
+function AccordionServices() {
   const [activeItem, setActiveItem] = useState('0'); // Estado para controlar o item ativo
 
   useEffect(() => {
@@ -27,12 +27,12 @@ function AccordionIndustrial() {
     <Accordion activeKey={activeItem} defaultActiveKey="0">
       {Services.map((service) => (
         <Accordion.Item key={service.id} eventKey={service.id}>
-          <Accordion.Header onClick={() => handleItemClick(service.id)}>
+          <Accordion.Header onClick={() => handleItemClick(service.id)} className={styles.accordionHeader}>
             <Icon
-              size="32px"
+              size="40px"
               bgColor={activeItem === service.id ? 'var(--red-400)' : 'transparent'}
               icon={service.icon}
-              iconSize="sm"
+              iconSize="lg"
               iconColor={activeItem === service.id ? 'var(--white)' : 'var(--red-400)'}
               hoverBgColor="var(--red-400)"
               hoverIconColor="var(--white)"
@@ -46,4 +46,4 @@ function AccordionIndustrial() {
   );
 }
 
-export default AccordionIndustrial;
+export default AccordionServices;
