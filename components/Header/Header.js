@@ -1,6 +1,6 @@
 import styles from './Header.module.scss';
 import Menu from '../Menu/Menu';
-import Logo from '../../../public/industrialservice-logo.svg';
+import Logo from '../../public/industrialservice-logo.svg';
 import Image from 'next/image';
 import Button from '../Button/Button';
 import React from 'react';
