@@ -1,3 +1,23 @@
+.accordionItem {
+    margin-bottom: 1rem;
+    border-radius: 20px;
+}
+
+.accordionHeader button{
+    background-color: var(--grey-50);
+    border-top: 1px solid #dee2e6;
+    border-radius: 20px;
+}
+.accordionHeader button:focus{
+    background-color: var(--red-50);
+    box-shadow: none;
+    border-top: 1px solid #dee2e6;
+}
+
+.accordionHeader button:hover{
+    background-color: var(--red-50);
+}
+
 .accordionHeader a {
     margin-right: 1rem;
 }

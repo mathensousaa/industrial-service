@@ -7,6 +7,8 @@
     --grey-700: #5f6368;
     --grey-900: #212529;
 
+
+    --red-50: rgba(235, 88, 97, 0.2);
     --red-200: #eb5861;
     --red-400: #e23b45;
     --red-700: #fe0002;
@@ -49,6 +51,42 @@ body {
 body, input, textarea, button {
     font: 400 1rem "Roboto", sans-serif;
 }
+
+ul {
+    margin-bottom: 0;
+}
+
+.accordion button:not(.collapsed) {
+    background-color: var(--red-50);
+    color: var(--red-900);
+    border-radius: 20px 20px 0 0;
+}
+
+.accordion-item:first-of-type{
+    border-radius: 20px;
+}
+
+.accordion-item:last-of-type {
+    border-radius: 20px;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top: none;
+    border-radius: 20px;
+}
+
+.accordion-item:first-of-type .accordion-button:not(.collapsed) {
+    border-radius: 20px 20px 0 0;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 20px;
+}
+
+.accordion-item:last-of-type .accordion-button:not(.collapsed) {
+    border-radius: 20px 20px 0 0;
+}
+
 
 a {
     text-decoration: none;
