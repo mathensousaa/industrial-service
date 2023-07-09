@@ -5,7 +5,6 @@
     background-color: var(--red-400);
     color: var(--grey-900);
     padding: 2rem;
-    height: 100vh;
 }
 
 .services .servicesContainer {
@@ -18,7 +17,7 @@
     justify-content: space-around;
 }
 
-.services .servicesContainer h2 {
+.services .servicesContainer h2.servicesTitle {
     margin-bottom: 1rem;
 }
 
