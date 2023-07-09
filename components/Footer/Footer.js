@@ -1,6 +1,6 @@
 import styles from "./Footer.module.css";
 import Menu from "../Menu/Menu";
-import Logo from "../../../public/industrialservice-logo.svg";
+import Logo from "../../public/industrialservice-logo.svg";
 import Image from "next/image";
 import Icon from "../Icon/Icon";
 import {

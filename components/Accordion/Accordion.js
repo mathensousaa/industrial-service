@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
-import { Services } from '../../../data/Services'
+import { Services } from '../../data/Services'
 import Icon from '../Icon/Icon';
 import styles from './Accordion.module.css';
 
