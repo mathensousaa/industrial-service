@@ -8,11 +8,7 @@ import React from 'react';
 export default function Header() { 
 
   const [active, setActive] = React.useState(false);
-
-  const handleClick = () => {
-    setActive(!active);
-  };
-
+  
   return (
     <header className={styles.header}>
       <a href="#">
@@ -40,9 +36,9 @@ export default function Header() {
         className={styles.menuToggler}
         onClick={() => setActive(!active)}
         size={20}>
-            <div className={`${styles.line1} ${active ? '' : styles.noAnimation}`}></div>
-            <div className={`${styles.line2} ${active ? '' : styles.noAnimation}`}></div>
-            <div className={`${styles.line3} ${active ? '' : styles.noAnimation}`}></div>	
+            <div className={`${styles.line1} ${active ? styles.toClose1 : styles.toOpen1 }`}></div>
+            <div className={`${styles.line2} ${active ? styles.toClose2 : styles.toOpen2}`}></div>
+            <div className={`${styles.line3} ${active ? styles.toClose3 : styles.toOpen3}`}></div>
       </div>
     </header>
   )

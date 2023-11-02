@@ -65,20 +65,23 @@
             border-radius: 200px;
             transition: background-color .2s ease-in-out;
         }
-    
-        .line1 {
-            animation: animateLine1Rev .7s ease-in-out;
-        }
-    
+
         .line2 {
             margin: 4px 0;
-            animation: animateLine2Rev .7s ease-in-out;
         }
     
-        .line3 {
-            animation: animateLine3Rev .7s ease-in-out;
+        .toOpen1 {
+            animation: animateLine1rev .7s ease-in-out;
         }
     
+        .toOpen2 {
+            animation: animateLine2rev .7s ease-in-out;
+        }
+    
+        .toOpen3 {
+            animation: animateLine3rev .7s ease-in-out;
+        }
+        
         &:hover {
             .line1,
             .line2,
@@ -86,7 +89,7 @@
                 background-color: var(--red-700);
             }
         }
-    
+        
         &.active {
             .line1,
             .line2,
@@ -94,19 +97,20 @@
                 background-color: var(--red-700);
             }
         }
-    
-        .line1 {
+        
+        .toClose1 {
             animation: animateLine1 .7s cubic-bezier(0.30,1,0.70,1) forwards;
         }
-        .line2 {
+        .toClose2 {
             animation: animateLine2 .7s cubic-bezier(0.30,1,0.70,1) forwards;
         }
-        .line3 {
+        .toClose3 {
             animation: animateLine3 .7s cubic-bezier(0.30,1,0.70,1) forwards;
         }
         
+
         .noAnimation {
-            -webkit-animation: nome !important;
+            -webkit-animation: none !important;
             animation: none !important;
         }
     }
@@ -146,7 +150,7 @@
         }
     }
     
-    @keyframes animateLine1-rev {
+    @keyframes animateLine1rev {
         0% {
             transform: translateY(7px) rotate(45deg);
         }
@@ -159,7 +163,7 @@
         
     }
     
-    @keyframes animateLine2-rev {
+    @keyframes animateLine2rev {
         0% {
             transform: scale(0);
             opacity: 0;
@@ -170,7 +174,7 @@
         }
     }
     
-    @keyframes animateLine3-rev {
+    @keyframes animateLine3rev {
         0% {
             transform: translateY(-7px) rotate(-45deg);
         }

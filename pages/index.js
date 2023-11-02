@@ -6,8 +6,9 @@ import Company from '../components/Empresa/Company';
 import Services from '../components/Servicos/Services'
 import Contact from '../components/Contato/Contact'
 import Footer from '../components/Footer/Footer'
+import Informations from '../components/Informacoes/Informations';
 
-export default function Home( ) {
+export default function Home() {
     return (
         <>
             <Head>
@@ -37,6 +38,7 @@ export default function Home( ) {
             <Company />
             <Services />
             <Contact />
+            {/* <Informations /> */}
             <Footer />
         </>
     )
