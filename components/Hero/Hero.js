@@ -41,6 +41,7 @@ export default function Hero() {
         />
         <div className={styles.socialWrapper}>
           <Icon
+            isLink
             size="62px"
             bgColor="var(--white)"
             link="https://www.linkedin.com/company/industrial-service-br/"
@@ -51,6 +52,7 @@ export default function Hero() {
             hoverIconColor="var(--white)"
           />
           <Icon
+            isLink
             size="62px"
             bgColor="var(--white)"
             link="https://www.instagram.com/industrialservicebr/"
@@ -61,6 +63,7 @@ export default function Hero() {
             hoverIconColor="var(--white)"
           />
           <Icon
+            isLink
             size="62px"
             bgColor="var(--white)"
             link="https://wa.me/5562982880057"
