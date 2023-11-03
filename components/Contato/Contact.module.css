@@ -70,8 +70,10 @@
 .formSwitch input:checked + label {
     background-color: var(--white);
     color: var(--grey-900);
-    border-color: var(--white);
+    border-color: var(--red-100);
+    border-bottom: none;
     z-index: 1;
+    box-shadow: 0 -5px 5px -5px var(--red-100), 5px 0 5px -5px var(--red-100), -5px 0 5px -5px var(--red-100);
 }
 
 .budgetForm {
@@ -106,6 +108,40 @@
 .budgetForm,
 .workForm {
     transition: all .5s ease;
+}
+
+.budget {
+    border: 1px solid var(--red-100);
+    border-top: none;
+    position: relative;
+    box-shadow: 0 0 10px var(--red-100);
+}
+
+.budget:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 1px;
+    width: 50%;
+    border-bottom: 1px solid var(--red-100);
+}
+
+.work {
+    border: 1px solid var(--red-100);
+    border-top: none;
+    position: relative;
+    box-shadow: 0 0 10px var(--red-100);
+}
+
+.work:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 1px;
+    width: 50%;
+    border-bottom: 1px solid var(--red-100);
 }
 
 .curriculumDiv {

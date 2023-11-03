@@ -28,6 +28,8 @@ export default function Hero() {
           </div>
         </div>
         <Button
+          isLink
+          link="#contact-form"
           content="Quero fazer um orçamento"
           bgColor="transparent"
           color="var(--red-700)"

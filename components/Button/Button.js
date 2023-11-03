@@ -26,7 +26,13 @@ export default function Button(props) {
     color: hover ? props.hoverColor : props.color,
   };
 
-  return (
+  return props.isLink ? (
+    <a href={props.link} rel="noopener noreferrer">
+      <button type="button" className={styles.btn} style={buttonStyles} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <span>{props.content}</span>
+      </button>
+    </a>
+  ) : (
     <button type="button" className={styles.btn} style={buttonStyles} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <span>{props.content}</span>
     </button>

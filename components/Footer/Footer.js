@@ -19,6 +19,7 @@ export default function Footer() {
         <Menu variant="light" />
         <div className={styles.socialWrapper}>
           <Icon
+            isLink
             bgColor="transparent"
             link="https://www.linkedin.com/company/industrial-service-br/"
             icon={faLinkedinIn}
@@ -28,6 +29,7 @@ export default function Footer() {
             hoverIconColor="var(--white)"
           />
           <Icon
+            isLink
             bgColor="transparent"
             link="https://www.instagram.com/industrialservicebr/"
             icon={faInstagram}
@@ -37,6 +39,7 @@ export default function Footer() {
             hoverIconColor="var(--white)"
           />
           <Icon
+            isLink
             bgColor="transparent"
             link="https://wa.me/5562982880057"
             icon={faWhatsapp}

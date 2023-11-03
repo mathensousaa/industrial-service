@@ -18,6 +18,6 @@
     background-color: var(--red-50);
 }
 
-.accordionHeader a {
-    margin-right: 1rem;
+.accordionHeader a, .accordionHeader div {
+    margin-right: .75rem;
 }
