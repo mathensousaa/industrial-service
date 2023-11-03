@@ -37,7 +37,7 @@ function AccordionServices() {
               hoverBgColor="var(--red-400)"
               hoverIconColor="var(--white)"
             />
-            {service.title}
+            <span>{service.title}</span>
           </Accordion.Header>
           <Accordion.Body>{service.description}</Accordion.Body>
         </Accordion.Item>
