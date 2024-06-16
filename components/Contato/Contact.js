@@ -41,176 +41,181 @@ export default function Contact() {
   ];
 
   return (
-    <section className={styles.contact}>
-      <div className={styles.contactColumn}>
-        <h2>
-          Empresas líderes sabem a importância da segurança e da manutenção em
-          suas instalações.
-        </h2>
-        <p>
-          Os nossos treinamentos de segurança do trabalho são formas de orientar
-          os colaboradores para que eles exerçam suas atividades de forma
-          segura. Isso ajuda a <b>evitar riscos</b> e permite que os
-          profissionais ajam de forma adequada em situações adversas ou
-          perigosas. Os treinamentos{" "}
-          <b>
-            deixam a empresa em dia com suas obrigações legais e reduz o risco
-            das pessoas se machucarem durante a execução de suas atividades
-          </b>
-          .
-        </p>
-        <p>
-          Com nosso serviço de manutenção{" "}
-          <b>ajudamos as empresas a manter seus recursos</b> enquanto controlam
-          tempo e custos para <b>garantir a máxima eficiência</b> do processo de
-          fabricação, das concessionárias e das instalações relacionadas.
-        </p>
-      </div>
-      <div className={styles.contactColumn} id="contact-form">
-        <h2>Converse conosco</h2>
-        <fieldset className={styles.formSwitch}>
-          <input
-            onClick={(e) => {
-              toggleForm(e);
-              setChecked(1);
-            }}
-            type="radio"
-            name="switcher"
-            id="comOne"
-            checked={checked === 1 ? "checked" : ""}
-          ></input>
-          <label htmlFor="comOne">Orçamento</label>
-          <input
-            onClick={(e) => {
-              toggleForm(e);
-              setChecked(2);
-            }}
-            type="radio"
-            name="switcher"
-            id="comTwo"
-            checked={checked === 2 ? "checked" : ""}
-          ></input>
-          <label htmlFor="comTwo">Trabalhe conosco</label>
-        </fieldset>
-        <div
-            className={`${styles.formsContainer} ${checked === 1 ? styles.budget : styles.work}`}
-        >
-          <form
-            className={`${styles.budgetForm} ${
-              isVisible.id === "comOne"
-                ? `comOne`
-                : "comOne" && styles.noDisplay
-            }`}
-            onSubmit={() => {}}
-          >
-            <div className={styles.col}>
-              <Input
-                labelContent="Nome"
-                inputID="name"
-                type="text"
-                inputRequired="required"
-              />
-              <Input
-                labelContent="Telefone"
-                inputID="telephone"
-                type="text"
-                inputRequired="required"
-                inputPlaceholder="(99) 99999-9999"
-                inputMode="numeric"
-              />
-              <Input
-                labelContent="Empresa"
-                inputID="company"
-                type="text"
-                inputRequired="required"
-              />
-
-              <Select
-                labelContent="Serviço desejado"
-                selectID="services"
-                selectRequired="required"
-                itens={services}
-              />
-            </div>
-            <div className={styles.col}>
-              <Input
-                labelContent="E-mail corporativo ou comum"
-                inputID="email"
-                type="email"
-                inputRequired="required"
-              />
-
-              <Select
-                labelContent="Como encontrou a Industrial Service?"
-                selectID="howFinded"
-                selectRequired="required"
-                itens={howFinded}
-              />
-
-              <Select
-                labelContent="Motivo do contato"
-                selectID="contactReason"
-                selectRequired="required"
-                itens={contactReason}
-              />
-            </div>
-            <div className={styles.textArea}>
-              <TextArea
-                labelContent="Mensagem"
-                textAreaID="message"
-                textAreaPlaceholder="Se desejar, descreva com mais detalhes o que precisa."
-                maxLength="500"
-              />
-            </div>
-          </form>
-          <form
-            className={`${styles.workForm} ${
-              isVisible.id === "comTwo"
-                ? `comTwo`
-                : "comTwo" && styles.noDisplay
+    <section className={styles.contact} id="contact">
+      <div className={styles.contactWrapper}>
+        <div className={styles.contactColumn}>
+          <h2>
+            Empresas líderes sabem a importância da segurança e da manutenção em
+            suas instalações.
+          </h2>
+          <p>
+            Os nossos treinamentos de segurança do trabalho são formas de
+            orientar os colaboradores para que eles exerçam suas atividades de
+            forma segura. Isso ajuda a <b>evitar riscos</b> e permite que os
+            profissionais ajam de forma adequada em situações adversas ou
+            perigosas. Os treinamentos{" "}
+            <b>
+              deixam a empresa em dia com suas obrigações legais e reduz o risco
+              das pessoas se machucarem durante a execução de suas atividades
+            </b>
+            .
+          </p>
+          <p>
+            Com nosso serviço de manutenção{" "}
+            <b>ajudamos as empresas a manter seus recursos</b> enquanto
+            controlam tempo e custos para <b>garantir a máxima eficiência</b> do
+            processo de fabricação, das concessionárias e das instalações
+            relacionadas.
+          </p>
+        </div>
+        <div className={styles.contactColumn} id="contact-form">
+          <h2>Converse conosco</h2>
+          <fieldset className={styles.formSwitch}>
+            <input
+              onClick={(e) => {
+                toggleForm(e);
+                setChecked(1);
+              }}
+              type="radio"
+              name="switcher"
+              id="comOne"
+              checked={checked === 1 ? "checked" : ""}
+            ></input>
+            <label htmlFor="comOne">Orçamento</label>
+            <input
+              onClick={(e) => {
+                toggleForm(e);
+                setChecked(2);
+              }}
+              type="radio"
+              name="switcher"
+              id="comTwo"
+              checked={checked === 2 ? "checked" : ""}
+            ></input>
+            <label htmlFor="comTwo">Trabalhe conosco</label>
+          </fieldset>
+          <div
+            className={`${styles.formsContainer} ${
+              checked === 1 ? styles.budget : styles.work
             }`}
           >
-            <div className={styles.col}>
-              <Input
-                labelContent="Nome completo"
-                inputID="name"
-                type="text"
-                inputRequired="required"
-              />
+            <form
+              className={`${styles.budgetForm} ${
+                isVisible.id === "comOne"
+                  ? `comOne`
+                  : "comOne" && styles.noDisplay
+              }`}
+              onSubmit={() => {}}
+            >
+              <div className={styles.col}>
+                <Input
+                  labelContent="Nome"
+                  inputID="name"
+                  type="text"
+                  inputRequired="required"
+                />
+                <Input
+                  labelContent="Telefone"
+                  inputID="telephone"
+                  type="text"
+                  inputRequired="required"
+                  inputPlaceholder="(99) 99999-9999"
+                  inputMode="numeric"
+                />
+                <Input
+                  labelContent="Empresa"
+                  inputID="company"
+                  type="text"
+                  inputRequired="required"
+                />
 
-              <Input
-                labelContent="Telefone"
-                inputID="telephone"
-                type="text"
-                inputRequired="required"
-                inputPlaceholder="(99) 99999-9999"
-                inputMode="numeric"
-              />
-            </div>
-            <div className={styles.col}>
-              <Input
-                labelContent="E-mail"
-                inputID="email"
-                type="email"
-                inputRequired="required"
-              />
-              <Input
-                labelContent="Link do perfil no Linkedin"
-                inputID="linkedinProfile"
-                type="url"
-              />
-            </div>
-            <div className={styles.curriculumDiv}>
-              <Input
-                className={styles.curriculum}
-                labelContent="Anexar currículo (PDF, DOC, DOCX)"
-                inputID="curriculum"
-                type="file"
-                accept=".pdf, .doc, .docx"
-                inputRequired="required"
-              />
-            </div>
-          </form>
+                <Select
+                  labelContent="Serviço desejado"
+                  selectID="services"
+                  selectRequired="required"
+                  itens={services}
+                />
+              </div>
+              <div className={styles.col}>
+                <Input
+                  labelContent="E-mail corporativo ou comum"
+                  inputID="email"
+                  type="email"
+                  inputRequired="required"
+                />
+
+                <Select
+                  labelContent="Como encontrou a Industrial Service?"
+                  selectID="howFinded"
+                  selectRequired="required"
+                  itens={howFinded}
+                />
+
+                <Select
+                  labelContent="Motivo do contato"
+                  selectID="contactReason"
+                  selectRequired="required"
+                  itens={contactReason}
+                />
+              </div>
+              <div className={styles.textArea}>
+                <TextArea
+                  labelContent="Mensagem"
+                  textAreaID="message"
+                  textAreaPlaceholder="Se desejar, descreva com mais detalhes o que precisa."
+                  maxLength="500"
+                />
+              </div>
+            </form>
+            <form
+              className={`${styles.workForm} ${
+                isVisible.id === "comTwo"
+                  ? `comTwo`
+                  : "comTwo" && styles.noDisplay
+              }`}
+            >
+              <div className={styles.col}>
+                <Input
+                  labelContent="Nome completo"
+                  inputID="name"
+                  type="text"
+                  inputRequired="required"
+                />
+
+                <Input
+                  labelContent="Telefone"
+                  inputID="telephone"
+                  type="text"
+                  inputRequired="required"
+                  inputPlaceholder="(99) 99999-9999"
+                  inputMode="numeric"
+                />
+              </div>
+              <div className={styles.col}>
+                <Input
+                  labelContent="E-mail"
+                  inputID="email"
+                  type="email"
+                  inputRequired="required"
+                />
+                <Input
+                  labelContent="Link do perfil no Linkedin"
+                  inputID="linkedinProfile"
+                  type="url"
+                />
+              </div>
+              <div className={styles.curriculumDiv}>
+                <Input
+                  className={styles.curriculum}
+                  labelContent="Anexar currículo (PDF, DOC, DOCX)"
+                  inputID="curriculum"
+                  type="file"
+                  accept=".pdf, .doc, .docx"
+                  inputRequired="required"
+                />
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>

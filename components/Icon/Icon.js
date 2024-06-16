@@ -21,6 +21,7 @@ export default function Icon(props) {
 
     // Hover styles
     backgroundColor: hover ? props.hoverBgColor : props.bgColor,
+    border: props.border,
   };
 
   const iconStyles = {
