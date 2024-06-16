@@ -125,6 +125,7 @@ export default function Informations() {
                           color="var(--white)"
                           border="2px solid var(--red-400)"
                           hoverBorder="2px solid var(--red-400)"
+                          hoverColor="var(--red-400)"
                           borderRadius="9999px"
                           padding="4px 16px"
                           onClick={info.action && info.action}
@@ -136,6 +137,7 @@ export default function Informations() {
                           color="var(--white)"
                           border="2px solid var(--red-400)"
                           hoverBorder="2px solid var(--red-400)"
+                          hoverColor="var(--red-400)"
                           borderRadius="9999px"
                           padding="4px 16px"
                           onClick={() =>
