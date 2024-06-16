@@ -1,0 +1,151 @@
+.informations {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  padding: var(--padding);
+  gap: 4rem;
+  background: linear-gradient(180deg, var(--white) 85%, var(--red-400) 15%);
+}
+
+.infosContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.informations .infosContainer h2 {
+  font-size: var(--h2FontSize);
+  font-weight: 800 !important;
+}
+
+.informations .infosContainer .infosRow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0 1rem 3rem #0000002d;
+  border-radius: 0.375rem;
+  background-color: var(--white);
+  min-height: 450px;
+}
+
+.informations .infosContainer .infosRow .infoColumn {
+  width: 50%;
+}
+
+.infoColumn:last-child {
+  padding: 2rem;
+}
+
+.informations .infosContainer .infosRow .infoColumn .map {
+  border-radius: 0.375rem 0 0 0.375rem;
+  width: 100%;
+  height: 100%;
+}
+
+.infoItem {
+  border-bottom: 1px solid rgba(95, 99, 104, 25%);
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoItemHeader {
+  display: flex;
+  justify-content: start;
+}
+
+.infoItemHeader p {
+  margin-bottom: 0;
+  flex: 1 1 auto;
+}
+
+.infoItemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.infoItemTitleWrapper {
+  display: flex;
+  min-width: 25%;
+  height: fit-content;
+  align-items: center;
+  gap: 1vh;
+}
+
+.infoItemTitleWrapper h6 {
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.socialButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.infoItemActionsWrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (max-width: 1199.98px) {
+  .informations {
+    --padding: 4rem;
+    height: 100%;
+  }
+
+  .textContent {
+    width: 75%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .informations {
+    flex-direction: column;
+  }
+
+  .informations .infosContainer {
+    width: 100%;
+  }
+
+  .infoItemHeader {
+    flex-direction: column;
+    gap: 1vh;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .informations {
+    --padding: 4rem 1rem;
+  }
+
+  .informations .infosContainer .infosRow .infoColumn .map {
+    height: 300px;
+  }
+
+  .informations .infosContainer .infosRow {
+    flex-direction: column;
+  }
+
+  .informations .infosContainer .infosRow .infoColumn {
+    width: 100%;
+  }
+
+  .informations .infosContainer .infosRow .infoColumn:last-child {
+    padding: 2vh 1.5vh;
+  }
+
+  .infoItemActionsWrapper > button,
+  .infoItemActionsWrapper > a {
+    width: 50%;
+  }
+
+  .infoItemActionsWrapper > a > button {
+    width: 100%;
+  }
+}

@@ -1,214 +1,222 @@
 .textArea {
-    width: 100%;
+  width: 100%;
 }
 
 .contact {
-    background: linear-gradient(to right, var(--red-900), #180000);
-    color: var(--white);
-    display: flex;
-    justify-content: space-around;
-    height: 100%;
-    padding: var(--padding);
-    gap: 4rem;
+  background: linear-gradient(to right, var(--red-900), #180000);
+  color: var(--white);
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  padding: var(--padding);
+  gap: 4rem;
+}
+
+.contact .contactWrapper {
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  gap: 4rem;
 }
 
 .contact .contactColumn {
-    width: 50%;
+  width: 50%;
 }
 
 .contact .contactColumn h2 {
-    font-size: var(--h2FontSize);
-    margin-bottom: 2rem;
+  font-size: var(--h2FontSize);
+  margin-bottom: 2rem;
 }
 
 .contact .contactColumn p {
-    margin-bottom: 1rem;
-    text-align: justify;
+  margin-bottom: 1rem;
+  text-align: justify;
 }
 
-
-
 .formSwitch {
-    display: flex;
-    padding-right: 0;
-    border: none;
+  display: flex;
+  padding-right: 0;
+  border: none;
 }
 
 .formSwitch input {
-    width: 0;
-    height: 0;
-    position: absolute;
-    left: -9999px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -9999px;
 }
 
 .formSwitch label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .formSwitch input + label {
-    background-color: var(--grey-50);
-    padding: 1rem 2rem;
-    color: var(--grey-700);
-    width: 500%;
-    border-radius: 10px 10px 0 0;
-    text-align: center;
-    border: 1px solid var(--grey-50);
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: 	border-color .50s ease-out, 
-					color .50s ease-out, 
-					background-color .50s ease-out,
+  background-color: var(--grey-50);
+  padding: 1rem 2rem;
+  color: var(--grey-700);
+  width: 500%;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  border: 1px solid var(--grey-50);
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: border-color 0.5s ease-out, color 0.5s ease-out,
+    background-color 0.5s ease-out;
 }
 
 .formSwitch input:hover + label {
-    border-color: var(--grey-900);
+  border-color: var(--grey-900);
 }
 
 .formSwitch input:checked + label {
-    background-color: var(--white);
-    color: var(--grey-900);
-    border-color: var(--red-100);
-    border-bottom: none;
-    z-index: 1;
+  background-color: var(--white);
+  color: var(--grey-900);
+  border-color: var(--red-100);
+  border-bottom: none;
+  z-index: 1;
 }
 
 .budgetForm {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .workForm {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .col {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
 }
 
-.col input, .col select {
-    width: 100%;
+.col input,
+.col select {
+  width: 100%;
 }
 
 .formsContainer {
-    background-color: var(--white);
-    color: var(--grey-900);
-    padding: 2rem;
-    border-radius: 0 0 10px 10px;
-} 
+  background-color: var(--white);
+  color: var(--grey-900);
+  padding: 2rem;
+  border-radius: 0 0 10px 10px;
+}
 
 .budgetForm,
 .workForm {
-    transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .budget {
-    border: 1px solid var(--red-100);
-    border-top: none;
-    position: relative;
+  border: 1px solid var(--red-100);
+  border-top: none;
+  position: relative;
 }
 
 .budget:before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 1px;
-    width: 50%;
-    border-bottom: 1px solid var(--red-100);
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 1px;
+  width: 50%;
+  border-bottom: 1px solid var(--red-100);
 }
 
 .work {
-    border: 1px solid var(--red-100);
-    border-top: none;
-    position: relative;
+  border: 1px solid var(--red-100);
+  border-top: none;
+  position: relative;
 }
 
 .work:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 1px;
-    width: 50%;
-    border-bottom: 1px solid var(--red-100);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1px;
+  width: 50%;
+  border-bottom: 1px solid var(--red-100);
 }
 
 .curriculumDiv {
-    width: 100%;
-    padding: 1rem;
-    border-radius: 10px;
-    background-color: var(--grey-50);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--grey-50);
 }
 
 .curriculumDiv div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .curriculumDiv input::-webkit-file-upload-button {
-    border: 1px solid var(--grey-700);
-    background-color: var(--white);
-    padding: 8px 16px;
-    border-radius: 10px;
-    margin-right: 1rem;
-    width: 50%;
+  border: 1px solid var(--grey-700);
+  background-color: var(--white);
+  padding: 8px 16px;
+  border-radius: 10px;
+  margin-right: 1rem;
+  width: 50%;
 }
 
 .noDisplay {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 1199.98px) {
-    .contact {
-        --padding: 4rem;
-        height: 100%;
-    }
+  .contact {
+    --padding: 4rem;
+    height: 100%;
+  }
 
-    .textContent {
-        width: 75%;
-    }
-    
+  .contactWrapper {
+    flex-direction: column;
+  }
+
+  .contact .contactColumn {
+    width: 100%;
+  }
+
+  .textContent {
+    width: 100%;
+  }
 }
 
 @media (max-width: 991.98px) {
-    .contact {
-        flex-direction: column;
-    }
-
-    .contact .contactColumn {
-        width: 100%;
-    }
-
-    .textContent {
-        width: 100%;
-    }
-    
+  .contact {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 767.98px) {
-    .contact {
-        --padding: 4rem 2rem;
-    }
+  .formsContainer {
+    padding: 1rem;
+  }
 
-    .budgetForm {
-        flex-direction: column;
-    }
+  .contact {
+    --padding: 4rem 1rem;
+  }
 
-    .col {
-        width: 100%;
-    }
-    .formSwitch label {
-        vertical-align: middle;
-    }
+  .budgetForm {
+    flex-direction: column;
+  }
 
-    .curriculumDiv input {
-        flex-direction: column;
-    }
+  .col {
+    width: 100%;
+  }
+  .formSwitch label {
+    vertical-align: middle;
+  }
+
+  .curriculumDiv input {
+    flex-direction: column;
+  }
 }

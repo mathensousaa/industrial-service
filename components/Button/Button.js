@@ -1,5 +1,5 @@
-import styles from './Button.module.css';
-import React from 'react';
+import styles from "./Button.module.css";
+import React from "react";
 
 export default function Button(props) {
   const [hover, setHover] = React.useState(false);
@@ -7,11 +7,11 @@ export default function Button(props) {
   const handleMouseEnter = () => {
     setHover(true);
   };
-  
+
   const handleMouseLeave = () => {
     setHover(false);
   };
-  
+
   const buttonStyles = {
     backgroundColor: props.bgColor,
     color: props.color,
@@ -28,13 +28,26 @@ export default function Button(props) {
 
   return props.isLink ? (
     <a href={props.link} rel="noopener noreferrer">
-      <button type="button" className={styles.btn} style={buttonStyles} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <button
+        type="button"
+        className={styles.btn}
+        style={buttonStyles}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
         <span>{props.content}</span>
       </button>
     </a>
   ) : (
-    <button type="button" className={styles.btn} style={buttonStyles} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <button
+      type="button"
+      className={styles.btn}
+      style={buttonStyles}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onClick={props.onClick}
+    >
       <span>{props.content}</span>
     </button>
   );
-};
+}
